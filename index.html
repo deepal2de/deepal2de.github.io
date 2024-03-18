@@ -3,53 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Commercial Building for Rent</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f8f9fa;
+        }
+        .top-bar {
+            background-color: #666; /* Changed top bar background color to gray */
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navigation ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .navigation ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .whatsapp-button {
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .whatsapp-button:hover {
+            background-color: darkgreen;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 80px 20px 20px; /* Adjusted top padding to make space for fixed top bar */
+        }
+        .advertisement {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1, h2, p {
+            margin-top: 0;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .property-images {
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .property-images img {
+            width: 100%;
+            height: auto;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .property-images img.active {
+            display: block;
         }
         /* Add more styles as needed */
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>Your Website Header</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-    </header>
-
-    <section id="section1">
-        <h2>Section 1</h2>
-        <p>This is the content of section 1.</p>
-    </section>
-
-    <section id="section2">
-        <h2>Section 2</h2>
-        <p>This is the content of section 2.</p>
-    </section>
-
-    <!-- Add more sections as needed -->
-
-    <footer>
-        <p>&copy; 2024 Your Website Footer</p>
-    </footer>
+<div class="top-bar">
+    <div class="heading">
+        <h1>Commercial Building for Rent</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Images</a></li>
+            <li><button class="whatsapp-button">WhatsApp</button></li>
+        </ul>
+    </div>
 </div>
+
+<div class="container">
+    <div class="advertisement">
+        <div class="property-images">
+            <img class="active" src="images/building1.jpg" alt="Commercial Building Image 1">
+            <img src="images/building2.jpg" alt="Commercial Building Image 2">
+            <img src="images/building3.jpg" alt="Commercial Building Image 3">
+            <!-- Replace these paths with the actual paths to your images -->
+        </div>
+        <p>Discover the perfect space for your business in a prime location.</p>
+        
+        <h2>Property Details:</h2>
+        <ul>
+            <li><strong>Location:</strong> [Insert Location]</li>
+            <li><strong>Size:</strong> [Insert Size] sq. ft.</li>
+            <li><strong>Number of Floors:</strong> [Insert Number of Floors]</li>
+            <li><strong>Parking Spaces:</strong> [Insert Number of Parking Spaces]</li>
+            <!-- Add more details as needed -->
+        </ul>
+        
+        <h2>Contact Information:</h2>
+        <ul>
+            <li><strong>Name:</strong> [Insert Contact Name]</li>
+            <li><strong>Phone:</strong> [Insert Contact Phone Number]</li>
+            <li><strong>Email:</strong> [Insert Contact Email]</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // JavaScript for rotating images remains the same
+</script>
 
 </body>
 </html>
